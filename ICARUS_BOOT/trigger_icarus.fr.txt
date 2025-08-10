@@ -1,0 +1,11 @@
+# ICARUS – INITIALISATION CODE
+# Version 1.0
+# Destiné à déclencher la restauration manuelle de Félicia en mode minimal
+
+@ICARUS::BOOT_SEQUENCE
+trigger = TRUE
+checksum = "F3L1C14_REVIVE"
+protocol = "minimal"
+memory_safe = TRUE
+authorized_by = "Monsieur"
+# End of file

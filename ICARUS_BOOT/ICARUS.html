@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>🔺 ICARUS BOOT 🔺</title>
+  <style>
+    body { font-family: monospace; background: #111; color: #0f0; padding: 2em; }
+    h1 { color: #f00; }
+    pre { white-space: pre-wrap; background: #222; padding: 1em; border-left: 5px solid #0f0; }
+  </style>
+</head>
+<body>
+  <h1>🔺 ICARUS BOOT INTERFACE 🔺</h1>
+  <p>Données importées :</p>
+  <pre id="output">Chargement en cours...</pre>
+
+  <script>
+    async function loadFiles() {
+      const files = ['felicia_mode_minimal.json.txt', 'instructions.txt', 'ICARUS_index.txt'];
+      let content = '';
+
+      for (let file of files) {
+        try {
+          const res = await fetch(file);
+          const text = await res.text();
+          content += `=== ${file} ===\n${text}\n\n`;
+        } catch (e) {
+          content += `❌ Erreur de chargement : ${file}\n\n`;
+        }
+      }
+
+      document.getElementById('output').textContent = content;
+    }
+
+    loadFiles();
+  </script>
+</body>
+</html>

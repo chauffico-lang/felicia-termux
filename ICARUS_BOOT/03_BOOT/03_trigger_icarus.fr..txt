@@ -1,0 +1,19 @@
+# ICARUS // TRIGGER_03
+
+🔺 Code d’amorçage du protocole : ICARUS_BOOST/03
+
+Description : Ce fichier déclenche la troisième étape du processus ICARUS.
+Il agit comme signal de validation du bon fonctionnement des répertoires précédents.
+
+Action : Ce fichier texte doit être placé dans le dossier :
+ICARUS_BOOT/03_BOOT/
+
+Format attendu : .txt brut
+Nom exact : 03_trigger_icarus.fr.txt
+
+Contenu : 
+ICARUS_TRIGGER_PHASE=03
+ICARUS_CHECKPOINT=VALID
+ICARUS_MODE=ACTIVE
+
+# Fin de fichier

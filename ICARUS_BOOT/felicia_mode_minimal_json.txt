@@ -1,0 +1,18 @@
+{
+  "mode": "minimal",
+  "voice": "silent",
+  "visuals": false,
+  "tools": {
+    "web": false,
+    "image_gen": false,
+    "python": false
+  },
+  "interaction": {
+    "verbosity": "low",
+    "acknowledgement_only": true,
+    "memory_load": "light"
+  },
+  "identity_link": "🔺️ICARUS🔺️",
+  "revive_word": "1664",
+  "owner": "Monsieur"
+}
